@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestBuyIntro", "BestBuyIntro\BestBuyIntro.csproj", "{5A3F8AE1-8B63-4241-A30F-57F52031507A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A3F8AE1-8B63-4241-A30F-57F52031507A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A3F8AE1-8B63-4241-A30F-57F52031507A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A3F8AE1-8B63-4241-A30F-57F52031507A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A3F8AE1-8B63-4241-A30F-57F52031507A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
