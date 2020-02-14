@@ -136,9 +136,7 @@ namespace BestBuyIntro
 
         static void UpdateDepartment(int departmentID, string newName)
         {
-            Department updated = new Department();
-            updated.DepartmentID = departmentID;
-            updated.DepartmentName = newName;
+            Department updated = FindDepartment(departmentID);
             var connStr = System.IO.File.ReadAllText("ConnectionString.txt");
 
             using (var conn = new MySqlConnection(connStr))
@@ -147,7 +145,7 @@ namespace BestBuyIntro
                 MySqlCommand cmd = conn.CreateCommand();
 
                 cmd.CommandText = "UPDATE departments SET name = @newName WHERE departmentID = @departmentID";
-                cmd.Parameters.AddWithValue("newName", updated.DepartmentName);
+                cmd.Parameters.AddWithValue("newName", newName);
                 cmd.Parameters.AddWithValue("departmentID", updated.DepartmentID);
                 cmd.ExecuteNonQuery();
             }
